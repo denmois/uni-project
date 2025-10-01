@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>NanoVNA</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/IndexStyle.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="sources/favicon.ico">
+</head>
+<body>
+    <div class="flexdisplay">
+    <!-- Верхнее меню -->
+        <header class="header">
+            <span class="header span">NanoVNA: Компактный измеритель мира СВЧ</span>
+        </header>
+        <input type="checkbox" id="burger">
+        <label for="burger"></label>
+        <nav class="header-menu">
+                <a href="index.html" class="header-menu-links"> Главная страница </a>
+                <a href="Control.html" class="header-menu-links"> Работа с прибором </a>
+                <a href="AboutAuthor.html" class="header-menu-links"> Об авторе </a>
+        </nav>
+        <main class="main">
+            <aside class="main-aside-1">
+                <figure class="figure-item" onclick="openModal('sources/full/interface.png', 'Интерфейс NanoVNA')">
+                    <img src="sources/mini/interface.png" alt="Интерфейс прибора" class="figure-image">
+                    <figcaption class="figcaption">Интерфейс NanoVNA</figcaption>
+                </figure>
+                <div class="main-aside-1-line"></div>
+                <div class="main-aside-1-secondblock">
+                    <h1 class="main-aside-1-secondblock-text">NanoVNA (Vector Network Analyzer)</h1>
+                    </br>
+                    <h3>Не просто прибор, а революция в мире высокочастотных измерений.<br> Созданный усилиями  сообщества энтузиастов с открытым<br> исходным кодом, этот компактный и доступный девайс помещается<br>  на ладони, но предоставляет возможности, ранее доступные<br> только в дорогостоящем профессиональном оборудовании.</h3>
+                </div>
+            </aside>
+            </br>
+            </br>
+            </br>
+            </br>
+            <h2 align="center">Используется для анализа</h2>
+            <aside class="main-aside-2">
+                    <div class="main-aside-2-firstblock">
+                        <h3>S-параметров</h3>
+                    </div>
+                    <div class="main-aside-2-secondblock">
+                        <h3>Коэффициента <br>стоячей волны </h3>
+                    </div>
+                    <div class="main-aside-2-thirdblock">
+                        <h3>Амплитудно-частотной<br> характеристикики (АЧХ)</h3>
+                    </div>
+            </aside>
+            </br>
+            </br>
+            </br>
+            </br>
+            <aside class="main-aside-4">
+                <figure class="figure-item" onclick="openModal('sources/full/nanoVNA.jpg', 'NanoVNA устройство')">
+                    <img src="sources/mini/nanoVNA.jpg" alt="Устройство NanoVNA" class="figure-image">
+                    <figcaption class="figcaption">Устройство NanoVNA</figcaption>
+                </figure>
+                <div class="main-aside-4-secondblock">
+                    <h4>NanoVNA предназначен для анализа компонентов и цепей, работающих на высоких частотах (обычно от 50 кГц до 3 ГГц). С его помощью можно измерить ключевые параметры, определяющие, как высокочастотный сигнал ведет себя в устройстве.<br><br> В отличие от своих громоздких и дорогих предшественников, NanoVNA построен на современной элементной базе. Его сердцем является специализированный чип, который выполняет роль и генератора сигнала, и приемника. Прибор посылает тестовый сигнал в исследуемое устройство (DUT), анализирует отраженный и прошедший сигналы, а затем математически вычисляет и отображает все производные параметры. <br><br>NanoVNA изначально разрабатывался для гибкости. Помимо работы с специализированным ПО для ПК, он может взаимодействовать с веб-браузером. Через USB-подключение и использование современных web-технологий, таких как WebSerial API, пользователь может управлять прибором, просматривать живые графики и сохранять данные прямо в окне браузера.</h4>
+                </div>
+            </aside>
+            <br>
+            <br>
+            <br>
+        </main>
+        <footer class="footer">
+            <div class="footer-blocks">
+                <span> Моисеев Денис ПС-21 </span> 
+                <img src="/cnt/counter.php?cat=wifi_router&amp;color=1&amp;id=1572c0aac40ec92992b50630c4a12f13" alt="IT Counter" />
+            </div>
+        </footer>
+    </div>
+    <script src="js/slider.js"></script>
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+</body>
